@@ -1,0 +1,11 @@
+def calculate_median(lst):
+    sorted_lst = sorted(lst)
+    length = len(sorted_lst)
+    middle = length // 2
+
+    if length % 2 == 0:
+        median = (sorted_lst[middle - 1] + sorted_lst[middle]) / 2
+    else:
+        median = sorted_lst[middle]
+
+    return median
